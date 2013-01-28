@@ -15,6 +15,10 @@ alias ....='cd ../../..'
 #copy the working directory into the clipboard
 alias cwd='pwd | pbcopy'
 
+#alias for pull & push github
+alias pull-dotfiles='pushd $HOME/Documents/dotfiles && git pull origin master && ./link-files.rb --safe; popd'
+alias push-dotfiles='pushd $HOME/Documents/dotfiles && git add -A && git commit -m "Update" && git push origin master; popd'
+
 # Unbreak broken, non-colored terminal
 export TERM='xterm-color'
 export GREP_OPTIONS="--color"
