@@ -10,3 +10,5 @@ linkables.each do |linkable|
     puts ".#{file} linked" if safe_mode
   end
 end
+
+%x(cp -r $PWD/.vim $HOME/)
