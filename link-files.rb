@@ -11,4 +11,4 @@ linkables.each do |linkable|
   end
 end
 
-%x(cp -r $PWD/.vim $HOME/)
+%x(cp -r -f $PWD/.vim $HOME/ && source $HOME/.bash_profile)

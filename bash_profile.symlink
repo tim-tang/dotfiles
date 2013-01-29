@@ -8,7 +8,6 @@ alias h='history'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-alias mvn='mvn-color'
 alias ..='cd ..'
 alias ...='cd .. ;cd ..'
 alias ....='cd ../../..'
@@ -82,11 +81,10 @@ fi
 
 # Alias maven to provide colored output.
 function mvn-color() {
-    command mvn "$@" 2>&1 | colorlogs maven
+command mvn "$@" 2>&1 | colorlogs maven
 }
 
-# colorize maven shell
-#source ~/colorize-maven.sh
+alias mvn='mvn-color'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
