@@ -10,14 +10,17 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias mvn='mvn-color'
 alias ..='cd ..'
-alias ...='cd ../..'
+alias ...='cd .. ;cd ..'
 alias ....='cd ../../..'
 #copy the working directory into the clipboard
 alias cwd='pwd | pbcopy'
 
-#alias for pull & push github
+# Alias for pull&push to github
 alias pull-dotfiles='pushd $HOME/Documents/dotfiles && git pull origin master && ./link-files.rb --safe; popd'
 alias push-dotfiles='pushd $HOME/Documents/dotfiles && git add -A && git commit -m "Update" && git push origin master; popd'
+
+# Alias for push jekyll blog to github
+alias push-jekyll='pushd $HOME/Documents/tim-tang.github.com && git add -A && git commit -m "Update jekyll blog" && git push origin master; popd'
 
 # Unbreak broken, non-colored terminal
 export TERM='xterm-color'
@@ -29,6 +32,7 @@ export HISTSIZE=10000
 # Append to the history file when exiting instead of overwriting it
 shopt -s histappend
 
+# Terminal colors
 export CLICOLOR=1
 export LSCOLORS=gxfxaxdxcxegedabagacad
 #export PS1='\u@\h:\w\$'
@@ -38,12 +42,14 @@ MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
 GIT_DIFF=$HOME/git-diff
 JMETER_HOME=$HOME/Applications/apache-jmeter-2.7
 M2_HOME=$HOME/Applications/apache-maven-3.0.3
-PATH=$GIT_DIFF:$M2_HOME/bin:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$PATH
+NPM_HOME=/usr/local/share/npm
+PATH=$GIT_DIFF:$M2_HOME/bin:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
 
 export MAVEN_OPTS
 export GIT_DIFF
 export JMETER_HOME
 export M2_HOME
+export NPM_HOME
 export EDITOR=vim
 #export PAGER=less
 
@@ -81,3 +87,10 @@ function mvn-color() {
 
 # colorize maven shell
 #source ~/colorize-maven.sh
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Setting PATH for Python 2.7
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH
