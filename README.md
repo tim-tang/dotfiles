@@ -11,7 +11,12 @@ Mac OSX /Linux => Vim&Dot Files
 
 - Add alias that easy to pull and push
 
-    $ pull-dotfiles  # pull latest dotfiles and run command
-    $ push-dotfile   # push updated local file into GitHub
+    $ pull-dotfiles
+
+> pull latest dotfiles and run command
+
+    $ push-dotfile
+
+> push updated local file into GitHub
 
 
