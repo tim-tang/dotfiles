@@ -17,7 +17,7 @@
 [diff]
 	prompt = true
 	tool = vimdiff
-	external = git_diff_wrapper
+	external = git_diff_wrapper.sh
 [difftool]
 	prompt = true
 [merge]
