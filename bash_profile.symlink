@@ -38,7 +38,7 @@ export LSCOLORS=gxfxaxdxcxegedabagacad
 PS1="[\[\033[1;32m\]\u@\h:\w\[\033[0m] \[\033[0m\]\[\033[1;36m\]\$(git_branch)\[\033[0;33m\]\$(git_since_last_commit)\[\033[0m\]$ "
 
 MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
-GIT_DIFF=$HOME/Documents/dotfiles/git-diff
+GIT_DIFF=$HOME/Documents/dotfiles
 JMETER_HOME=$HOME/Applications/apache-jmeter-2.7
 M2_HOME=$HOME/Applications/apache-maven-3.0.3
 NPM_HOME=/usr/local/share/npm
