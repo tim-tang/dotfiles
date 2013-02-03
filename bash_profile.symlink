@@ -35,7 +35,7 @@ shopt -s histappend
 export CLICOLOR=1
 export LSCOLORS=gxfxaxdxcxegedabagacad
 #export PS1='\u@\h:\w\$'
-PS1="[\[\033[1;32m\]\u@\h:\w\[\033[0m] \[\033[0m\]\[\033[1;36m\]\$(git_branch)\[\033[0;33m\]\$(git_since_last_commit)\[\033[0m\]$ "
+PS1="[\[\033[1;32m\]\u@\h:\w\[\033[0m] \[\033[0m\]\[\033[1;36m\]\$(parse_git_branch)\[\033[0;33m\]\$(git_since_last_commit)\[\033[0m\]$ "
 
 MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
 GIT_DIFF=$HOME/Documents/dotfiles
@@ -62,6 +62,15 @@ git diff --no-ext-diff -w "$@" | vim -R -
 function git_branch {
 ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
 echo "("${ref#refs/heads/}") ";
+}
+
+# Show Git dirty state (and branch) in the prompt
+function parse_git_dirty {
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
+}
+
+function parse_git_branch {
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
 }
 
 function git_since_last_commit {
