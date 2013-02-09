@@ -11,4 +11,5 @@ linkables.each do |linkable|
   end
 end
 
-%x(cp -r -f $PWD/.vim $HOME/ && source $HOME/.bash_profile)
+%x(cp -r -f $PWD/gnzh.zsh-theme $HOME/.oh-my-zsh/themes/ )
+%x(cp -r -f $PWD/.vim $HOME/ && source $HOME/.zshrc)
