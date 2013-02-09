@@ -42,8 +42,10 @@ GIT_DIFF=$HOME/Documents/dotfiles
 JMETER_HOME=$HOME/Applications/apache-jmeter-2.7
 M2_HOME=$HOME/Applications/apache-maven-3.0.3
 NPM_HOME=/usr/local/share/npm
-PATH=$GIT_DIFF:$M2_HOME/bin:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
+BENERATOR_HOME=/Users/timtang/Applications/databene-benerator-0.7.10
+PATH=$BENERATOR_HOME/bin:$GIT_DIFF:$M2_HOME/bin:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
 
+export BENERATOR_HOME
 export MAVEN_OPTS
 export GIT_DIFF
 export JMETER_HOME
