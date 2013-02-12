@@ -86,3 +86,11 @@ alias pstart='postgres -D /usr/local/var/postgres &'
 function git_diff() {
     git diff --no-ext-diff -w "$@" | vim -R -
 }
+
+# Load the shell dotfiles, and then some:
+# # * ~/.path can be used to extend `$PATH`.
+# # * ~/.extra can be used for other settings you don’t want to commit.
+# for file in ~/.{exports,aliases,functions}; do
+#   [ -r "$file" ] && source "$file"
+# done
+# unset file
