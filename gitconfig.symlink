@@ -1,6 +1,9 @@
 [user]
 	name = tim.tang
 	email = tang.jilong@139.com
+[apply]
+    # Detect whitespace errors when applying a patch
+    whitespace = fix
 [color]
 	branch = auto
 	status = auto
@@ -18,6 +21,10 @@
 	prompt = true
 	tool = vimdiff
 	external = git_diff_wrapper.sh
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
 [difftool]
 	prompt = true
 [merge]
