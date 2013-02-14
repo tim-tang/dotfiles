@@ -2,3 +2,8 @@
 function mkd() {
     mkdir -p "$@" && cd "$@"
 }
+
+# Git diff use vimdiff substitution
+function git_diff() {
+    git diff --no-ext-diff -w "$@" | vim -R -
+}

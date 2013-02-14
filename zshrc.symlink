@@ -39,58 +39,10 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 #export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/timtang/.rvm/gems/ruby-1.9.3-p362/bin:/Users/timtang/.rvm/gems/ruby-1.9.3-p362@global/bin:/Users/timtang/.rvm/rubies/ruby-1.9.3-p362/bin:/Users/timtang/.rvm/bin:/Users/timtang/Applications/databene-benerator-0.7.10/bin:/Users/timtang/Documents/dotfiles:/Users/timtang/Applications/apache-maven-3.0.3/bin:/bin:/Users/timtang/Applications/apache-jmeter-2.7/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin
 
-MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
-GIT_DIFF=$HOME/Documents/dotfiles
-JMETER_HOME=$HOME/Applications/apache-jmeter-2.7
-M2_HOME=$HOME/Applications/apache-maven-3.0.3
-NPM_HOME=/usr/local/share/npm
-BENERATOR_HOME=/Users/timtang/Applications/databene-benerator-0.7.10
-PATH=$BENERATOR_HOME/bin:$GIT_DIFF:$M2_HOME/bin:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
-
-export BENERATOR_HOME
-export MAVEN_OPTS
-export GIT_DIFF
-export JMETER_HOME
-export M2_HOME
-export NPM_HOME
-export EDITOR=vim
-
-
-# some more ls aliases
-alias ls='ls -G -ltr'
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias h='history'
-
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias ..='cd ..'
-alias ...='cd .. ;cd ..'
-alias ....='cd ../../..'
-#copy the working directory into the clipboard
-alias cwd='pwd | pbcopy'
-
-# Alias for pull&push to github
-alias pull-dotfiles='pushd $HOME/Documents/dotfiles && git pull origin master && ./link-files.rb --safe; popd'
-alias push-dotfiles='pushd $HOME/Documents/dotfiles && git add -A && git commit -m "Update" && git push origin master; popd'
-
-# Alias for push jekyll blog to github
-alias push-jekyll='pushd $HOME/Documents/tim-tang.github.com && git add -A && git commit -m "Update jekyll blog" && git push origin master; popd'
-
-# Postgresql configuration
-alias pstart='postgres -D /usr/local/var/postgres &'
-
-# Git diff use vimdiff substitution
-function git_diff() {
-    git diff --no-ext-diff -w "$@" | vim -R -
-}
-
 # Load the shell dotfiles, and then some:
 # # * ~/.path can be used to extend `$PATH`.
 # # * ~/.extra can be used for other settings you don’t want to commit.
-# for file in ~/.{exports,aliases,functions}; do
-#   [ -r "$file" ] && source "$file"
-# done
-# unset file
+for file in ~/.{exports,aliases,functions}; do
+  [ -r "$file" ] && source "$file"
+done
+unset file

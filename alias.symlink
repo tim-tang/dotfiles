@@ -5,6 +5,17 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
+# some more ls aliases
+alias ls='ls -G -ltr'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias h='history'
+alias cwd='pwd | pbcopy'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # Shortcuts
 alias dl="cd ~/Downloads"
@@ -13,7 +24,6 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias v="vim"
-alias m="mate ."
 alias s="subl ."
 alias o="open"
 alias oo="open ."
@@ -28,3 +38,13 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# Alias for pull&push to github
+alias pull-dotfiles='pushd $HOME/Documents/dotfiles && git pull origin master && ./link-files.rb --safe; popd'
+alias push-dotfiles='pushd $HOME/Documents/dotfiles && git add -A && git commit -m "Update" && git push origin master; popd'
+
+# Alias for push jekyll blog to github
+alias push-jekyll='pushd $HOME/Documents/tim-tang.github.com && git add -A && git commit -m "Update jekyll blog" && git push origin master; popd'
+
+# Postgresql configuration
+alias pstart='postgres -D /usr/local/var/postgres &'
