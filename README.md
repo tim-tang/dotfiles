@@ -3,7 +3,7 @@ Mac OSX /Linux => Vim&Dot Files
 
 ## Create dot file link
 
-    $ ./link-files --safe
+    $ ./install.sh
 
 > Above command will create symbol links under $Home/ and copy .vim folder into $Home/
 
