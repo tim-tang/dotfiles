@@ -19,15 +19,17 @@ export LESS_TERMCAP_md="$ORANGE"
 export MANPAGER="less -X"
 
 GRADLE_HOME=/Users/timtang/Applications/gradle-1.7
+GRAILS_HOME=/Users/timtang/Applications/grails-2.2.3
 MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
 GIT_DIFF=$HOME/Documents/dotfiles
 JMETER_HOME=$HOME/Applications/apache-jmeter-2.7
 M2_HOME=$HOME/Applications/apache-maven-3.0.3
 NPM_HOME=/usr/local/share/npm
 BENERATOR_HOME=/Users/timtang/Applications/databene-benerator-0.7.10
-PATH=$GRADLE_HOME/bin:$BENERATOR_HOME/bin:$GIT_DIFF:$M2_HOME/bin:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
+PATH=$GRAILS_HOME/bin:$GRADLE_HOME/bin:$BENERATOR_HOME/bin:$GIT_DIFF:$M2_HOME/bin:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
 
 export GRADLE_HOME
+export GRAILS_HOME
 export BENERATOR_HOME
 export MAVEN_OPTS
 export GIT_DIFF
@@ -36,6 +38,6 @@ export M2_HOME
 export NPM_HOME
 export EDITOR=vim
 
-#while read -r line; do
-#  export "$line"
-#done < .epic_profile
+while read -r line; do
+  export "$line"
+done < .epic_profile
