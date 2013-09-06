@@ -33,6 +33,7 @@ brew install pigz
 brew install rename
 brew install tree
 brew install w3m
+brew install urlview
 
 # Install native apps
 brew tap phinze/homebrew-cask
