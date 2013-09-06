@@ -50,4 +50,4 @@ alias push-dotfiles='pushd $HOME/Documents/dotfiles && git add -A && git commit 
 alias push-jekyll='pushd $HOME/Documents/tim-tang.github.com && git add -A && git commit -m "Update jekyll blog" && git push origin master; popd'
 
 # Postgresql configuration
-alias pstart='postgres -D /usr/local/var/postgres > /dev/null 2>&1'
+alias pstart='postgres -D /usr/local/var/postgres > /dev/null 2>&1 &'
