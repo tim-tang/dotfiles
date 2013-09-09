@@ -32,6 +32,9 @@ brew install lynx
 brew install pigz
 brew install rename
 brew install tree
+
+# Install mac terminal mail client
+brew install mutt
 brew install w3m
 brew install urlview
 
