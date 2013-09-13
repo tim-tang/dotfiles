@@ -33,6 +33,9 @@ brew install pigz
 brew install rename
 brew install tree
 
+# Install nosql db riak
+brew install riak
+
 # Install mac terminal mail client
 brew install mutt
 brew install w3m
