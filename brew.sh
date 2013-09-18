@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo chown -R `whoami` /usr/local
+
 # Make sure we’re using the latest Homebrew
 brew update
 
@@ -35,6 +37,9 @@ brew install tree
 
 # Install nosql db riak
 brew install riak
+
+# Install redis
+brew install redis
 
 # Install mac terminal mail client
 brew install mutt

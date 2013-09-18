@@ -50,5 +50,8 @@ alias push-dotfiles='pushd $HOME/Documents/dotfiles && git add -A && git commit 
 # Alias for push jekyll blog to github
 alias push-jekyll='pushd $HOME/Documents/tim-tang.github.com && git add -A && git commit -m "Update jekyll blog" && git push origin master; popd'
 
-# Postgresql configuration
+# Postgresql startup
 alias pstart='postgres -D /usr/local/var/postgres > /dev/null 2>&1 &'
+
+# Redis startup
+alias rstart='redis-server /usr/local/etc/redis.conf > /dev/null 2>&1 &'
