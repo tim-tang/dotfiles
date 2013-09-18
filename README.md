@@ -1,5 +1,8 @@
 Mac OSX /Linux => Vim&Dot Files
 --
+## Git-free install
+
+    curl -#L https://github.com/tim-tang/dotfiles/tarball/master |tar -xzv
 
 ## Create dot file link
 
