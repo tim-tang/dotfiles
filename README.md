@@ -1,8 +1,12 @@
 Mac OSX /Linux => Vim&Dot Files
 --
+## Install Home Brew
+
+    $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+
 ## Git-free install
 
-    curl -#L https://github.com/tim-tang/dotfiles/tarball/master |tar -xzv
+    $ curl -L https://github.com/tim-tang/dotfiles/tarball/master |tar -xzv
 
 ## Create dot file link
 
@@ -13,6 +17,8 @@ Mac OSX /Linux => Vim&Dot Files
 ## When setting up a new Mac, you may want to install some common Homebrew formulae (after installing Homebrew, of course):
 
     $ ./brew.sh
+
+    $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 ## Add alias that easy to pull and push
 
