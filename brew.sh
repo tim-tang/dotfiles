@@ -35,6 +35,10 @@ brew install pigz
 brew install rename
 brew install tree
 
+# Install zsh and switch to zsh
+brew install zsh
+chsh -s /bin/zsh
+
 # Install nosql db riak
 brew install riak
 
