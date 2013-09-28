@@ -19,7 +19,6 @@ export LESS_TERMCAP_md="$ORANGE"
 export MANPAGER="less -X"
 export TMPDIR=/tmp
 
-
 JAVA_HOME=$(/usr/libexec/java_home)
 MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
 GIT_DIFF=$HOME/Documents/dotfiles
@@ -40,6 +39,6 @@ export NPM_HOME
 export VERTX_HOME
 export EDITOR=vim
 
-while read -r line; do
-    export "$line"
-done < .epic
+#while read -r line; do
+#  export "$line"
+#done < .epic_profile

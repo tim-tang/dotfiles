@@ -7,11 +7,13 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 # some more ls aliases
 alias ls='ls -G -ltr'
-alias ll='ls -alF'
+alias ll='ls -AlF'
 alias la='ls -A'
 alias l='ls -CF'
 alias h='history'
 alias cwd='pwd | pbcopy'
+alias gitp='git p4'
+alias cp='rsync -av --progress --stats'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -27,6 +29,8 @@ alias v="vim"
 alias s="subl ."
 alias o="open"
 alias oo="open ."
+# IP addresses
+alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
@@ -46,5 +50,8 @@ alias push-dotfiles='pushd $HOME/Documents/dotfiles && git add -A && git commit 
 # Alias for push jekyll blog to github
 alias push-jekyll='pushd $HOME/Documents/tim-tang.github.com && git add -A && git commit -m "Update jekyll blog" && git push origin master; popd'
 
-# Postgresql configuration
-alias pstart='postgres -D /usr/local/var/postgres &'
+# Postgresql startup
+alias pstart='postgres -D /usr/local/var/postgres > /dev/null 2>&1 &'
+
+# Redis startup
+alias rstart='redis-server /usr/local/etc/redis.conf > /dev/null 2>&1 &'
