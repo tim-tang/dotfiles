@@ -34,6 +34,7 @@ brew install lynx
 brew install pigz
 brew install rename
 brew install tree
+brew install maven
 
 # Install zsh and switch to zsh
 brew install zsh
@@ -58,14 +59,13 @@ function installcask() {
     brew cask install "${@}" 2> /dev/null
 }
 
-installcask evernote
+#installcask evernote
 installcask google-chrome
 installcask google-chrome-canary
 installcask iterm2
-installcask miro-video-converter
 installcask vlc
 installcask u-torrent
-installcask qq
+#installcask qq
 installcask skitch
 installcask the-unarchiver
 installcask dropbox
