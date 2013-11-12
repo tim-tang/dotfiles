@@ -1,5 +1,12 @@
-Mac OSX /Linux => Vim&Dot Files
---
+    ```
+        ____   ____.__            ____   ________             __    ___________.__ .__                   
+    \   \ /   /|__|  _____   /  _ \  \______ \    ____  _/  |_  \_   _____/|__||  |    ____    ______
+     \   Y   / |  | /     \  >  _ </\ |    |  \  /  _ \ \   __\  |    __)  |  ||  |  _/ __ \  /  ___/
+      \     /  |  ||  Y Y  \/  <_\ \/ |    `   \(  <_> ) |  |    |     \   |  ||  |__\  ___/  \___ \ 
+       \___/   |__||__|_|  /\_____\ \/_______  / \____/  |__|    \___  /   |__||____/ \___  >/____  >
+                         \/        \/        \/                      \/                   \/      \/ 
+    ```
+
 ## Install Home Brew
 
     $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
@@ -14,7 +21,7 @@ Mac OSX /Linux => Vim&Dot Files
 
 > Above command will create symbol links under $Home/ and copy .vim folder into $Home/
 
-## When setting up a new Mac, you may want to install some common Homebrew formulae (after installing Homebrew, of course):
+## When setting up a new Mac, you may want to install some common Homebrew formule (after installing Homebrew, of course):
 
     $ ./brew.sh
 
