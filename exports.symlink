@@ -19,24 +19,27 @@ export LESS_TERMCAP_md="$ORANGE"
 export MANPAGER="less -X"
 export TMPDIR=/tmp
 
-JAVA_HOME=$(/usr/libexec/java_home)
-MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
 GIT_DIFF=$HOME/Documents/dotfiles
-JMETER_HOME=$HOME/Applications/apache-jmeter-2.7
-NPM_HOME=/usr/local/share/npm
-BENERATOR_HOME=/Users/timtang/Applications/databene-benerator-0.7.10
-GRADLE_HOME=/Applications/gradle-1.6
-VERTX_HOME=/Users/tim-tang/Applications/vert.x-2.0.1-final
-PATH=$VERTX_HOME/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:$BENERATOR_HOME/bin:$GIT_DIFF:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
+#JAVA_HOME=$(/usr/libexec/java_home)
+#MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
+#JMETER_HOME=$HOME/Applications/apache-jmeter-2.7
+#NPM_HOME=/usr/local/share/npm
+#BENERATOR_HOME=/Users/timtang/Applications/databene-benerator-0.7.10
+#GRADLE_HOME=/Applications/gradle-1.6
+#VERTX_HOME=/Users/tim-tang/Applications/vert.x-2.0.1-final
+#PATH=$VERTX_HOME/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:$BENERATOR_HOME/bin:$GIT_DIFF:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
+export PATH=$GIT_DIFF:$PATH
+#export PATH=$GIT_DIFF:/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
+#export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
-export JAVA_HOME
-export GRADLE_HOME
-export BENERATOR_HOME
-export MAVEN_OPTS
 export GIT_DIFF
-export JMETER_HOME
-export NPM_HOME
-export VERTX_HOME
+#export JAVA_HOME
+#export GRADLE_HOME
+#export BENERATOR_HOME
+#export MAVEN_OPTS
+#export JMETER_HOME
+#export NPM_HOME
+#export VERTX_HOME
 export EDITOR=vim
 
 #while read -r line; do

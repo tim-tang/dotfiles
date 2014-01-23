@@ -13,7 +13,8 @@ alias l='ls -CF'
 alias h='history'
 alias cwd='pwd | pbcopy'
 alias gitp='git p4'
-alias cp='rsync -av --progress --stats'
+alias cp='cp -g'
+alias mv='mv -g'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -55,3 +56,6 @@ alias pstart='postgres -D /usr/local/var/postgres > /dev/null 2>&1 &'
 
 # Redis startup
 alias rstart='redis-server /usr/local/etc/redis.conf > /dev/null 2>&1 &'
+
+# Unserscore pretty json
+alias _='underscore'
