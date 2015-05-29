@@ -1,6 +1,6 @@
 [user]
-	name = tim.tang
-	email = tang.jilong@139.com
+	name = Tang Jilong
+	email = tangjilong@briphant.com
 [apply]
     # Detect whitespace errors when applying a patch
     whitespace = fix
@@ -50,3 +50,5 @@
 	dh1 = diff HEAD~1
 [mergetool]
 	keepBackup = false
+[url "https://github.com/"]
+	insteadOf = git://github.com/

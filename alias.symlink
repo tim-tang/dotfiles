@@ -6,15 +6,15 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 # some more ls aliases
-alias ls='ls -G -ltr'
-alias ll='ls -AlF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ls='ls -G -lhtr'
+alias ll='ls -AhlF'
+alias la='ls -Ah'
+alias l='ls -CFh'
 alias h='history'
 alias cwd='pwd | pbcopy'
 alias gitp='git p4'
-alias cp='cp -g'
-alias mv='mv -g'
+#alias cp='cp -g'
+#alias mv='mv -g'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -59,3 +59,13 @@ alias rstart='redis-server /usr/local/etc/redis.conf > /dev/null 2>&1 &'
 
 # Unserscore pretty json
 alias _='underscore'
+alias sshcda='ssh -v -i ~/.ssh/id_rsa_deploy tim@uk.cogenda.com'
+alias ssheyd='ssh -v -i ~/.ssh/id_rsa_linode hash@173.255.253.43'
+
+# RDC
+alias desktt="rdesktop -d ORADEV -u jiltang -p 1QAZ2wsx -k en-us -a 16 -z -g 1440x800 -r clipboard:PRIMARYCLIPBOARD -5 -P slc06byp.us.oracle.com &"
+alias desk51="rdesktop -d isr10051 -u build -p Demantra1 -k en-us -a 16 -z -g 1440x800 -r clipboard:PRIMARYCLIPBOARD -5 -P isr10051.il.oracle.com &"
+alias desk73="rdesktop -d isr10073 -u build -p Demantra1 -k en-us -a 16 -z -g 1440x800 -r clipboard:PRIMARYCLIPBOARD -5 -P isr10073.il.oracle.com &"
+
+# DMT
+alias rundmt='java -Dcatalina.home=/Users/tim-tang/Documents/workspace/apache-tomcat-6.0.43 -Xmx1024M -Dfile.encoding=UTF-8 -classpath "/Users/tim-tang/Documents/workspace/web-enhancement/classes:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/abbot.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/alloy.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/commons-codec.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/commons-collections.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/commons-dbcp.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/commons-httpclient-3.0.1.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/commons-logging.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/commons-pool.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/djt.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/el-api.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/hamcrest-core-1.3.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/JARMasterPatch.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/javaws.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/jcjarmaster.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/jclass62.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/jdom.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/jfcunit.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/JGo.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/JGoLayout.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/jsp-api.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/jstl-1.2.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/junit-4.11.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/junit-addons-1.4.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/log4j.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/mail.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/ojdbc5.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/servlet-api.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/Source/commons-dbcp-1.4-sources.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/Source/commons-pool-1.6-sources.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/Source/decompiled alloy.jar:/Users/tim-tang/Documents/workspace/web-enhancement/ExternalJavaPackages/tclib.jar:/Users/tim-tang/Documents/workspace/web-enhancement/Signing/API/Client.jar:/Users/tim-tang/Documents/workspace/web-enhancement/WebProjects/common/log4j.jar:/Users/tim-tang/Documents/workspace/apache-tomcat-6.0.43/bin/bootstrap.jar:/Users/tim-tang/Documents/workspace/apache-tomcat-6.0.43/bin/commons-daemon.jar:/Users/tim-tang/Documents/workspace/apache-tomcat-6.0.43/bin/tomcat-juli.jar" org.apache.catalina.startup.Bootstrap start'

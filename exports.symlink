@@ -20,7 +20,8 @@ export MANPAGER="less -X"
 export TMPDIR=/tmp
 
 GIT_DIFF=$HOME/Documents/dotfiles
-#JAVA_HOME=$(/usr/libexec/java_home)
+NGINX_HOME=/opt/nginx/sbin
+export JAVA_HOME=$(/usr/libexec/java_home)
 #MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
 #JMETER_HOME=$HOME/Applications/apache-jmeter-2.7
 #NPM_HOME=/usr/local/share/npm
@@ -28,11 +29,13 @@ GIT_DIFF=$HOME/Documents/dotfiles
 #GRADLE_HOME=/Applications/gradle-1.6
 #VERTX_HOME=/Users/tim-tang/Applications/vert.x-2.0.1-final
 #PATH=$VERTX_HOME/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:$BENERATOR_HOME/bin:$GIT_DIFF:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
-export PATH=$GIT_DIFF:$PATH
+#export PHANTOM_HOME=/Users/tim-tang/phantomjs-2.0.0-macosx
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages
+export PATH=$JAVA_HOME/bin:$GIT_DIFF:$PYTHONPATH:$PATH
 #export PATH=$GIT_DIFF:/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
 #export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
-export GIT_DIFF
+
 #export JAVA_HOME
 #export GRADLE_HOME
 #export BENERATOR_HOME
@@ -41,7 +44,32 @@ export GIT_DIFF
 #export NPM_HOME
 #export VERTX_HOME
 export EDITOR=vim
+export NODE_PATH=/usr/local/lib/node_modules
+
+export AWS_ACCESS_KEY_ID="AKIAJINOJE6LEBDD4RUA"
+export AWS_SECRET_ACCESS_KEY="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"
+export OSS_ACCESS_KEY_ID="RAK6IIvD7mkCjpE0"
+export OSS_SECRET_ACCESS_KEY="8cDCH9fltXLqoHWp13hdcb3WoMAdFw"
+export COGENDA_STATIC_HOME='/Users/tim-tang/Work/cogenda-web/assets_rel/static'
+export COGENDA_DOWNLOADS_HOME='/Users/tim-tang/Work/downloads'
+export SMTP_PASSWORD='Nt3Sj7GP9Q'
+export LINODE_API_KEY='rE5ESqM4hqarGqMoop5yr95b0fwDeUNZdPHxgiy8F4TnKJvvjRaqPch5u8hRRFJS'
+#export http_proxy="http://cn-proxy.sg.oracle.com:80"
+#export http_proxy='cn-proxy.jp.oracle.com:80'
+#
+#docker settings
+export DOCKER_HOST=tcp://127.0.0.1:2376
+export DOCKER_CERT_PATH=/Users/tim-tang/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
+# Demantra CVS
+#export CVSROOT=":pserver:tim:tim@cvs.il.oracle.com:/opt/opencm/cvsroot"
+
+#export ORACLE_HOME="/Users/tim-tang/dockerws/orcl12c/instantclient_11_2"
+#export TNS_ADMIN=$ORACLE_HOME 
+#export PATH=$ORACLE_HOME:$PATH
 
 #while read -r line; do
 #  export "$line"
 #done < .epic_profile
+#
