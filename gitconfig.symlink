@@ -1,6 +1,6 @@
 [user]
-	name = Tang Jilong
-	email = tangjilong@briphant.com
+	name = Tim.Tang
+	email = tang.jilong@139.com
 [apply]
     # Detect whitespace errors when applying a patch
     whitespace = fix
@@ -52,3 +52,8 @@
 	keepBackup = false
 [url "https://github.com/"]
 	insteadOf = git://github.com/
+[github]
+	user = Tim.Tang
+
+[http]
+	postBuffer = 157286400
