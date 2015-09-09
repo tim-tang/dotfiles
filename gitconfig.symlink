@@ -1,6 +1,6 @@
 [user]
-	name = Tim.Tang
-	email = tang.jilong@139.com
+    name = Tim.Tang
+    email = tang.jilong@139.com
 [apply]
     # Detect whitespace errors when applying a patch
     whitespace = fix

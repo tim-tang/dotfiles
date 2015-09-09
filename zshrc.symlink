@@ -51,7 +51,9 @@ done
 unset file
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/sbin:/usr/pkg/sbin:/usr/pkg/bin:/usr/local/heroku/bin:/usr/local/bin:$PATH"
+#export PATH="/usr/local/sbin:/usr/pkg/sbin:/usr/pkg/bin:/usr/local/heroku/bin:/usr/local/bin:$PATH"
 
 # added by travis gem
 [ -f /Users/tim-tang/.travis/travis.sh ] && source /Users/tim-tang/.travis/travis.sh
+
+eval "$(chef shell-init zsh)"

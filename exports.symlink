@@ -19,9 +19,10 @@ export LESS_TERMCAP_md="$ORANGE"
 export MANPAGER="less -X"
 export TMPDIR=/tmp
 
-GIT_DIFF=$HOME/Documents/dotfiles
+GIT_DIFF=$HOME/playground/dotfiles
 NGINX_HOME=/opt/nginx/sbin
 export JAVA_HOME=$(/usr/libexec/java_home)
+export PYFI_HOME=$HOME/briphant-ws/pyfi
 #MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
 #JMETER_HOME=$HOME/Applications/apache-jmeter-2.7
 #NPM_HOME=/usr/local/share/npm
@@ -31,7 +32,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 #PATH=$VERTX_HOME/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:$BENERATOR_HOME/bin:$GIT_DIFF:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
 #export PHANTOM_HOME=/Users/tim-tang/phantomjs-2.0.0-macosx
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
-export PATH=$JAVA_HOME/bin:$GIT_DIFF:$PYTHONPATH:$PATH
+export PATH=$PYFI_HOME/bin:$JAVA_HOME/bin:$GIT_DIFF:$PYTHONPATH:$PATH
 #export PATH=$GIT_DIFF:/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
 #export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
@@ -73,3 +74,4 @@ export DOCKER_TLS_VERIFY=1
 #  export "$line"
 #done < .epic_profile
 #
+export PATH="$PATH:/opt/chefdk/bin:/opt/chefdk/embedded/bin"
