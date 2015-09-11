@@ -1,4 +1,4 @@
-yon_kstat).
+-module(tachyon_kstat).
 -behaviour(ensq_channel_behaviour).
 -record(state, {host, port, connections = #{}}).
 -export([init/0, response/2, message/3, error/2]).
