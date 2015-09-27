@@ -21,9 +21,9 @@ export TMPDIR=/tmp
 
 GIT_DIFF=$HOME/playground/dotfiles
 NGINX_HOME=/opt/nginx/sbin
+MVN_HOME=/Users/tim-tang/playground/apache-maven-3.3.3
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PYFI_HOME=$HOME/briphant-ws/pyfi
-#MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
 #JMETER_HOME=$HOME/Applications/apache-jmeter-2.7
 #NPM_HOME=/usr/local/share/npm
 #BENERATOR_HOME=/Users/timtang/Applications/databene-benerator-0.7.10
@@ -32,7 +32,7 @@ export PYFI_HOME=$HOME/briphant-ws/pyfi
 #PATH=$VERTX_HOME/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:$BENERATOR_HOME/bin:$GIT_DIFF:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
 #export PHANTOM_HOME=/Users/tim-tang/phantomjs-2.0.0-macosx
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
-export PATH=$PYFI_HOME/bin:$JAVA_HOME/bin:$GIT_DIFF:$PYTHONPATH:$PATH
+export PATH=$MVN_HOME/bin:$PYFI_HOME/bin:$JAVA_HOME/bin:$GIT_DIFF:$PYTHONPATH:$PATH
 #export PATH=$GIT_DIFF:/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
 #export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
@@ -40,7 +40,6 @@ export PATH=$PYFI_HOME/bin:$JAVA_HOME/bin:$GIT_DIFF:$PYTHONPATH:$PATH
 #export JAVA_HOME
 #export GRADLE_HOME
 #export BENERATOR_HOME
-#export MAVEN_OPTS
 #export JMETER_HOME
 #export NPM_HOME
 #export VERTX_HOME
