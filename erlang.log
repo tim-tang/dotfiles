@@ -1,0 +1,118 @@
+=INFO REPORT==== 12-Oct-2015::03:09:15 ===
+    alarm_handler: {set,{{disk_almost_full,"/lib/libc.so.1"},[]}}
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_rollback_backup.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_create.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_service_change.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_add_nic.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_update_state.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_rollback_snapshot.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_fw_rule.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_update_package.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_update_config.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_snapshot.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_backup.json
+Eshell V7.0  (abort with ^G)
+(howl@10.10.1.42)1> [os_mon] memory supervisor port (memsup): Erlang has closed
+
+=INFO REPORT==== 12-Oct-2015::03:10:23 ===
+    alarm_handler: {clear,{disk_almost_full,"/lib"}}
+(howl@10.10.1.42)1>
+=INFO REPORT==== 12-Oct-2015::03:10:23 ===
+    alarm_handler: {clear,{disk_almost_full,"/sbin"}}
+(howl@10.10.1.42)1>
+=INFO REPORT==== 12-Oct-2015::03:10:23 ===
+    alarm_handler: {clear,{disk_almost_full,"/usr"}}
+(howl@10.10.1.42)1>
+=INFO REPORT==== 12-Oct-2015::03:10:23 ===
+    alarm_handler: {clear,{disk_almost_full,"/lib/libc.so.1"}}
+(howl@10.10.1.42)1> [os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+
+=====
+===== LOGGING STARTED Mon Oct 12 03:10:25 UTC 2015
+=====
+03:10:26.337 [error] Failed to open crash log file log/crash.log with error: permission denied
+03:10:26.399 [warning] cuttlefish_util:filter_by_variable_starts_with/2 has been deprecated. use cuttlefish_variable:filter_by_prefix/2
+Exec: /opt/local/fifo-howl/erts-7.0/bin/erlexec -boot /opt/local/fifo-howl/releases/0.7.0/howl -embedded  -config /var/db/howl/generated.configs/app.2015.10.12.03.10.26.config -args_file /var/db/howl/generated.configs/vm.2015.10.12.03.10.26.args -vm_args /var/db/howl/generated.configs/vm.2015.10.12.03.10.26.args  -- console
+Root: /opt/local/fifo-howl
+
+=INFO REPORT==== 12-Oct-2015::03:10:26 ===
+    alarm_handler: {set,{{disk_almost_full,"/lib"},[]}}
+
+=INFO REPORT==== 12-Oct-2015::03:10:26 ===
+    alarm_handler: {set,{{disk_almost_full,"/sbin"},[]}}
+
+=INFO REPORT==== 12-Oct-2015::03:10:26 ===
+    alarm_handler: {set,{{disk_almost_full,"/usr"},[]}}
+
+=INFO REPORT==== 12-Oct-2015::03:10:26 ===
+    alarm_handler: {set,{{disk_almost_full,"/lib/libc.so.1"},[]}}
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_rollback_backup.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_create.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_service_change.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_add_nic.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_update_state.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_rollback_snapshot.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_fw_rule.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_update_package.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_update_config.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_snapshot.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_backup.json
+Eshell V7.0  (abort with ^G)
+(howl@10.10.1.42)1>
+===== ALIVE Mon Oct 12 03:25:27 UTC 2015
+
+===== ALIVE Mon Oct 12 03:40:27 UTC 2015
+
+===== ALIVE Mon Oct 12 03:55:27 UTC 2015
+
+===== ALIVE Mon Oct 12 04:10:27 UTC 2015
+
+===== ALIVE Mon Oct 12 04:25:27 UTC 2015
+
+===== Mon Oct 12 04:34:04 UTC 2015
+[os_mon] memory supervisor port (memsup): Erlang has closed
+
+=INFO REPORT==== 12-Oct-2015::04:34:04 ===
+    alarm_handler: {clear,{disk_almost_full,"/lib"}}
+(howl@10.10.1.42)1>
+=INFO REPORT==== 12-Oct-2015::04:34:04 ===
+    alarm_handler: {clear,{disk_almost_full,"/sbin"}}
+(howl@10.10.1.42)1> [os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+
+=INFO REPORT==== 12-Oct-2015::04:34:04 ===
+    alarm_handler: {clear,{disk_almost_full,"/usr"}}
+(howl@10.10.1.42)1>
+=INFO REPORT==== 12-Oct-2015::04:34:04 ===
+    alarm_handler: {clear,{disk_almost_full,"/lib/libc.so.1"}}
+(howl@10.10.1.42)1>
+=====
+===== LOGGING STARTED Mon Oct 12 04:34:06 UTC 2015
+=====
+04:34:07.831 [error] Failed to open crash log file log/crash.log with error: permission denied
+04:34:07.882 [warning] cuttlefish_util:filter_by_variable_starts_with/2 has been deprecated. use cuttlefish_variable:filter_by_prefix/2
+Exec: /opt/local/fifo-howl/erts-7.0/bin/erlexec -boot /opt/local/fifo-howl/releases/0.7.0/howl -embedded  -config /var/db/howl/generated.configs/app.2015.10.12.04.34.07.config -args_file /var/db/howl/generated.configs/vm.2015.10.12.04.34.07.args -vm_args /var/db/howl/generated.configs/vm.2015.10.12.04.34.07.args  -- console
+Root: /opt/local/fifo-howl
+
+=INFO REPORT==== 12-Oct-2015::04:34:08 ===
+    alarm_handler: {set,{{disk_almost_full,"/lib"},[]}}
+
+=INFO REPORT==== 12-Oct-2015::04:34:08 ===
+    alarm_handler: {set,{{disk_almost_full,"/sbin"},[]}}
+
+=INFO REPORT==== 12-Oct-2015::04:34:08 ===
+    alarm_handler: {set,{{disk_almost_full,"/usr"},[]}}
+
+=INFO REPORT==== 12-Oct-2015::04:34:08 ===
+    alarm_handler: {set,{{disk_almost_full,"/lib/libc.so.1"},[]}}
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_rollback_backup.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_create.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_service_change.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_add_nic.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_update_state.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_rollback_snapshot.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_fw_rule.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_update_package.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_update_config.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_snapshot.json
+Loading file: /opt/local/fifo-howl/lib/wiggle-0.7.0/priv/schema/vm/vm_backup.json
+Eshell V7.0  (abort with ^G)
