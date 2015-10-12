@@ -73,4 +73,4 @@ export DOCKER_TLS_VERIFY=1
 #  export "$line"
 #done < .epic_profile
 #
-export PATH="$PATH:/opt/chefdk/bin:/opt/chefdk/embedded/bin"
+export PATH="/opt/pkg/sbin:/opt/pkg/bin:$PATH:/opt/chefdk/bin:/opt/chefdk/embedded/bin"
