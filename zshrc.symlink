@@ -57,3 +57,4 @@ unset file
 [ -f /Users/tim-tang/.travis/travis.sh ] && source /Users/tim-tang/.travis/travis.sh
 
 eval "$(chef shell-init zsh)"
+eval "$(docker-machine env default)"

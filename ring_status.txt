@@ -1,0 +1,43 @@
+================================== Claimant ===================================
+Claimant:  'snarl@10.7.80.41'
+Status:     up
+Ring Ready: true
+
+============================== Ownership Handoff ==============================
+No pending changes.
+
+============================== Unreachable Nodes ==============================
+All nodes are up and reachable
+
+================================== Claimant ===================================
+Claimant:  'sniffle@10.7.80.41'
+Status:     up
+Ring Ready: true
+
+============================== Ownership Handoff ==============================
+Owner:      sniffle@10.7.80.31
+Next Owner: sniffle@10.7.80.42
+
+Index: 890602560248518965780370444936484965102833893376
+  Waiting on: [sniffle_dataset_vnode,sniffle_dtrace_vnode,
+               sniffle_grouping_vnode,sniffle_hypervisor_vnode,
+               sniffle_iprange_vnode,sniffle_network_vnode,
+               sniffle_package_vnode,sniffle_vm_vnode]
+
+-------------------------------------------------------------------------------
+
+============================== Unreachable Nodes ==============================
+All nodes are up and reachable
+
+================================== Claimant ===================================
+Claimant:  'howl@10.7.80.41'
+Status:     up
+Ring Ready: true
+
+============================== Ownership Handoff ==============================
+No pending changes.
+
+============================== Unreachable Nodes ==============================
+All nodes are up and reachable
+
+
