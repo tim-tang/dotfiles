@@ -58,10 +58,11 @@ export LINODE_API_KEY='rE5ESqM4hqarGqMoop5yr95b0fwDeUNZdPHxgiy8F4TnKJvvjRaqPch5u
 #export http_proxy='cn-proxy.jp.oracle.com:80'
 
 #docker settings
-#export DOCKER_HOST=tcp://192.168.99.100:2376
+export DOCKER_HOST=tcp://10.75.1.207:8443
+#export DOCKER_CLIENT_TIMEOUT=300
 #export DOCKER_MACHINE_NAME=default
-#export DOCKER_TLS_VERIFY=1
-#export DOCKER_CERT_PATH="/Users/tim-tang/.docker/machine/machines/default"
+export DOCKER_TLS_VERIFY=1
+export DOCKER_CERT_PATH="/Users/tim-tang/.docker/fifo"
 
 # Demantra CVS
 #export CVSROOT=":pserver:tim:tim@cvs.il.oracle.com:/opt/opencm/cvsroot"
