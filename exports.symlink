@@ -58,7 +58,8 @@ export LINODE_API_KEY='rE5ESqM4hqarGqMoop5yr95b0fwDeUNZdPHxgiy8F4TnKJvvjRaqPch5u
 #export http_proxy='cn-proxy.jp.oracle.com:80'
 
 #docker settings
-export DOCKER_HOST=tcp://10.75.1.207:8443
+export DOCKER_HOST=tcp://briphant-orchestrator.fb.dev:8443
+#export DOCKER_HOST=tcp://10.75.1.207:8443
 #export DOCKER_CLIENT_TIMEOUT=300
 #export DOCKER_MACHINE_NAME=default
 export DOCKER_TLS_VERIFY=1
