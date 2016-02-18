@@ -5,6 +5,7 @@ export EDITOR="vim"
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
+export HISTTIMEFORMAT="%F %T "
 # Make some commands not show up in history
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
@@ -23,7 +24,7 @@ GIT_DIFF=$HOME/playground/dotfiles
 NGINX_HOME=/opt/nginx/sbin
 MVN_HOME=/Users/tim-tang/playground/apache-maven-3.3.3
 export JAVA_HOME=$(/usr/libexec/java_home)
-export PYFI_HOME=$HOME/briphant-ws/pyfi
+export PYFI_HOME=$HOME/playground/pyfi
 #JMETER_HOME=$HOME/Applications/apache-jmeter-2.7
 #NPM_HOME=/usr/local/share/npm
 #BENERATOR_HOME=/Users/timtang/Applications/databene-benerator-0.7.10
@@ -32,6 +33,7 @@ export PYFI_HOME=$HOME/briphant-ws/pyfi
 #PATH=$VERTX_HOME/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:$BENERATOR_HOME/bin:$GIT_DIFF:$POSTGRES_HOME/bin:$JMETER_HOME/bin:$NPM_HOME/bin:$PATH
 #export PHANTOM_HOME=/Users/tim-tang/phantomjs-2.0.0-macosx
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
+#export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/Library/Python/2.7/site-packages
 export PATH=$MVN_HOME/bin:$PYFI_HOME/bin:$JAVA_HOME/bin:$GIT_DIFF:$PYTHONPATH:$PATH
 #export PATH=$GIT_DIFF:/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
 #export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
@@ -58,11 +60,11 @@ export LINODE_API_KEY='rE5ESqM4hqarGqMoop5yr95b0fwDeUNZdPHxgiy8F4TnKJvvjRaqPch5u
 #export http_proxy='cn-proxy.jp.oracle.com:80'
 
 #docker settings
-export DOCKER_HOST=tcp://briphant-orchestrator.fb.dev:8443
-#export DOCKER_HOST=tcp://10.75.1.207:8443
+#export DOCKER_HOST=tcp://briphant-orchestrator.fb.dev:8443
+export DOCKER_HOST=tcp://10.20.0.98:8443
 #export DOCKER_CLIENT_TIMEOUT=300
 #export DOCKER_MACHINE_NAME=default
-export DOCKER_TLS_VERIFY=1
+export DOCKER_TLS_VERIFY="1"
 export DOCKER_CERT_PATH="/Users/tim-tang/.docker/fifo"
 
 # Demantra CVS
@@ -77,3 +79,4 @@ export DOCKER_CERT_PATH="/Users/tim-tang/.docker/fifo"
 #done < .epic_profile
 #
 export PATH="/opt/pkg/sbin:/opt/pkg/bin:$PATH:/opt/chefdk/bin:/opt/chefdk/embedded/bin"
+export ERL_MAX_PORTS=102400

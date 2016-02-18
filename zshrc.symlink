@@ -13,6 +13,7 @@ ZSH_THEME="jonathan"
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
+HIST_STAMPS="mm/dd/yyyy"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -56,5 +57,5 @@ unset file
 # added by travis gem
 [ -f /Users/tim-tang/.travis/travis.sh ] && source /Users/tim-tang/.travis/travis.sh
 
-eval "$(chef shell-init zsh)"
+#eval "$(chef shell-init zsh)"
 #eval "$(docker-machine env default)"
