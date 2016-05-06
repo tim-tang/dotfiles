@@ -78,5 +78,5 @@ export DOCKER_CERT_PATH="/Users/tim-tang/.docker/fifo"
 #  export "$line"
 #done < .epic_profile
 #
-export PATH="/opt/pkg/sbin:/opt/pkg/bin:$PATH"
-#export ERL_MAX_PORTS=102400
+export PATH="/opt/pkg/bin:$PATH"
+export ERL_MAX_PORTS=102400
