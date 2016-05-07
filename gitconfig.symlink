@@ -20,7 +20,7 @@
 [diff]
 	prompt = true
     tool = vimdiff
-    external = git_diff_wrapper.sh
+    external = ~/git_diff_wrapper.sh
 [color "status"]
     added = yellow
     changed = green
