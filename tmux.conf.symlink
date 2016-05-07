@@ -87,7 +87,8 @@ bind m set-window-option main-pane-height 60\; select-layout main-horizontal
 bind-key C command-prompt -p "Name of new window: " "new-window -n '%%'"
 
 # Clear the current pane AND clear the pane's history
-bind C-k send-keys 'C-l'\; clear-history
+# bind C-k send-keys 'C-l'\; clear-history
+bind -n C-k clear-history
 
 # reload config
 bind r source-file ~/.tmux.conf \; display-message "Config reloaded..."
